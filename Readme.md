@@ -1,5 +1,5 @@
-# Um seletor de cores
+Um seletor de cores
 
-# Alteração da cor de uma div atráves do select com cores pré-definidas
+Alteração da cor de uma div atráves do select com cores pré-definidas
 
-# Por Carolina Damasceno
+Por Carolina Damasceno
