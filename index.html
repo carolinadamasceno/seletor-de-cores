@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor de Cores</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+    <!-- Representa o conteúdo principal -->
+    <div class="container">
+        <!-- Representa a caixa centralizada -->
+        <div id="box">
+            <!-- Engloba os títulos e o select -->
+            <div class="content">
+                <h2>Seletor de Cores</h2>
+                <!-- Pulando linhas -->
+                <br><br><br><br><br><br><br>
+                <h3>Escolha uma cor abaixo: </h3>
+                <!-- Opções de escolha de cores -->
+                <select id="corselecionada" onchange="trocarCor(this.value)">
+                    <option value=""></option>
+                    <option value="red">vermelho</option>
+                    <option value="blue">azul</option>
+                    <option value="pink">rosa</option>
+                    <option value="green">verde</option>
+                    <option value="purple">roxo</option>
+                    <option value="yellow">amarelo</option>
+                    <option value="orange">laranja</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- Função JavaScript integrada ao HTML para troca de cor através do select -->
+    <script>
+        function trocarCor(valor) {
+            var corselecionada = document.getElementById('corselecionada').value;
+            document.getElementById("box").style.backgroundColor = corselecionada;
+        }
+    </script>
+
+</body>
+
+
+</html>
